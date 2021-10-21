@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-oct-2021, 19:44:42
+    Author     : gonza
+*/
+
+body{
+    background-image: url(../img_complementos/patter.jpg);
+}
+
+h1, h2, h3{
+
+    font-family: 'Ranchers', cursive;
+    background: linear-gradient(to right top, #051937, #2d3662, #5a548e, #8d73bb, #c592e7); /*Le damos degradado al fondo*/
+    -webkit-background-clip: text; /*Sirve para que el degradado del fondo de aplique al texto*/
+    color: transparent; /*Ponemos el texto tranparente*/;
+}
+
+p, a{
+    font-family: 'Long Cang', cursive;
+   
+}
+
+#cabezera{
+    background-color: #c40088;
+
+}
+
+.portada{
+    width: 20%;
+}
+
