@@ -24,11 +24,10 @@ import modelo.entidades.Productos;
  */
 public class ProductosJpaController implements Serializable {
 
-    public ProductosJpaController(UserTransaction utx, EntityManagerFactory emf) {
-        this.utx = utx;
+    public ProductosJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
-    private UserTransaction utx = null;
+    
     private EntityManagerFactory emf = null;
 
     public EntityManager getEntityManager() {
@@ -37,11 +36,13 @@ public class ProductosJpaController implements Serializable {
 
     public void create(Productos productos) throws RollbackFailureException, Exception {
         EntityManager em = null;
+        EntityTransaction etx = null;
         try {
-            utx.begin();
+            etx.begin();
+            etx = em.getTransaction();
             em = getEntityManager();
             em.persist(productos);
-            utx.commit();
+            etx.commit();
         } catch (Exception ex) {
             try {
                 utx.rollback();
@@ -58,14 +59,15 @@ public class ProductosJpaController implements Serializable {
 
     public void edit(Productos productos) throws NonexistentEntityException, RollbackFailureException, Exception {
         EntityManager em = null;
+        EntityTransaction etx = null;
         try {
-            utx.begin();
+            etx.begin();
             em = getEntityManager();
             productos = em.merge(productos);
-            utx.commit();
+            ext.commit();
         } catch (Exception ex) {
             try {
-                utx.rollback();
+                etx.rollback();
             } catch (Exception re) {
                 throw new RollbackFailureException("An error occurred attempting to roll back the transaction.", re);
             }
@@ -86,8 +88,9 @@ public class ProductosJpaController implements Serializable {
 
     public void destroy(Long id) throws NonexistentEntityException, RollbackFailureException, Exception {
         EntityManager em = null;
+        EntityTransaction etx = null;
         try {
-            utx.begin();
+            etx.begin();
             em = getEntityManager();
             Productos productos;
             try {
@@ -97,10 +100,10 @@ public class ProductosJpaController implements Serializable {
                 throw new NonexistentEntityException("The productos with id " + id + " no longer exists.", enfe);
             }
             em.remove(productos);
-            utx.commit();
+            etx.commit();
         } catch (Exception ex) {
             try {
-                utx.rollback();
+                etx.rollback();
             } catch (Exception re) {
                 throw new RollbackFailureException("An error occurred attempting to roll back the transaction.", re);
             }
