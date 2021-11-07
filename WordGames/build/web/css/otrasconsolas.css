@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-oct-2021, 19:44:51
+    Author     : gonza
+*/
+
+#cabezera{
+    background-color: #c40088;
+
+}
+
+h1, h2, h3{
+    font-family: 'Ranchers', cursive;
+}
+
+p, a{
+    font-family: 'Long Cang', cursive;
+}
+#title-enroll{
+    background-image: url(../img_index/subtitulo.jpg);
+    color: white;
+    text-align: center;
+}
+
+.portada{
+    width: 20%;
+}
+
+
+#tipos{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#tipos .atipos{
+    display: inline;
+    padding: 20px;
+}
+
+.atipos{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+#imgtipos{
+    width: 200px;
+    height: 200px;
+}
+
+div{
+
+    width: 550px;
+    margin: auto;
+}
+
+#caja1{
+    padding-top: 50px;
+}
+
+
+#caja2 {
+    display: none;
+    padding-top: 50px;
+}
