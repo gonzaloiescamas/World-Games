@@ -1,0 +1,77 @@
+body{
+    background-image: url(../img_login/infex.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.white {
+    color: white;
+}
+h1, h2, h3{
+    font-family: 'Ranchers', cursive;
+}
+
+p, a{
+    font-family: 'Long Cang', cursive;
+}
+
+#title-enroll{
+    
+    color: white;
+    text-align: center;
+}
+
+.inicio{
+    color: white;
+    text-decoration: none;
+}
+
+.portada{
+    width: 20%;
+}
+
+#cabezera{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,132,19,1) 0%, rgba(10,10,84,1) 0%, rgba(150,4,147,1) 100%);
+
+}
+
+#container{
+    margin: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,132,19,1) 0%, rgba(10,10,84,1) 0%, rgba(150,4,147,1) 100%);
+    color: white;
+}
+
+.carousel{
+    width: 50%;
+    height: 30rem;
+    margin: auto;
+}
+
+#carouselExampleCaptions{
+    margin-top: 2%;
+}
+
+.inscribirse{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,132,19,1) 0%, rgba(10,10,84,1) 0%, rgba(150,4,147,1) 100%);
+    padding: 2%;
+    text-align: center;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.registrate{
+    border-color: yellow;
+    background: none;
+    width: 15rem;
+    height: 3rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+
+}

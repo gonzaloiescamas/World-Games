@@ -1,0 +1,69 @@
+body{
+    background-image: url(../img_login/infex.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, h3{
+    font-family: 'Ranchers', cursive;
+}
+
+p, a{
+    font-family: 'Long Cang', cursive;
+}
+
+#cabezera{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,132,19,1) 0%, rgba(10,10,84,1) 0%, rgba(150,4,147,1) 100%);
+
+}
+
+.portada{
+    width: 20%;
+}
+
+section {
+
+    text-align: center;
+    margin-top: 3%;
+}
+    
+#xbox{
+    
+        width: 50rem;
+}
+
+#tiposdexbox{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,6,0.9979342078628326) 0%, rgba(247,246,242,1) 0%, rgba(34,34,39,1) 100%, rgba(244,243,244,1) 100%);
+}
+
+h1{
+    background: rgb(249,249,249);
+    background: radial-gradient(circle, rgba(249,249,249,1) 4%, rgba(242,248,248,1) 16%, rgba(183,157,234,1) 30%, rgba(216,148,233,1) 62%);
+    -webkit-background-clip: text; /*Sirve para que el degradado del fondo de aplique al texto*/
+    color: transparent; /*Ponemos el texto tranparente*/
+}
+
+
+.margintop{
+    margin-top: 4rem;
+}
+
+#xboxjuego{
+    color: green;
+}
+
+#xboxjuego:hover{
+    background-color: green;
+    color: white;
+}
+
+.img:hover{
+    width: 120px;
+}
+
+.white{
+    color: white;
+    text-decoration: none;
+}
